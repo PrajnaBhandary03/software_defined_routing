@@ -21,6 +21,8 @@
  * This contains the main function. Add further description here....
  */
 
+#include "../include/global.h"
+#include "../include/connection_manager.h"
 /**
  * main function
  *
@@ -32,5 +34,8 @@ int main(int argc, char **argv)
 {
 	/*Start Here*/
 	
+    sscanf(argv[1], "%" SCNu16, &CONTROL_PORT);
+    init(); // Initialize connection manager; This will block
+
 	return 0;
 }
