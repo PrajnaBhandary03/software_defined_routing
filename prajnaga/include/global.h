@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <inttypes.h>
 
-typedef enum {FALSE, TRUE} bool;
+//typedef enum {FALSE, TRUE} bool;
 
 #define ERROR(err_msg) {perror(err_msg); exit(EXIT_FAILURE);}
 
